@@ -1,0 +1,56 @@
+{
+	"extends": [
+		"airbnb-base"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		}
+	},
+	"rules": {
+		"no-restricted-syntax": ["error", "WithStatement"],
+		"class-methods-use-this": 0,
+		"no-await-in-loop": 0,
+		"comma-dangle": 0,
+		"no-continue": 0,
+		"no-bitwise": 0,
+		"no-tabs": 0,
+		"indent": [
+			"error",
+			"tab"
+		],
+		"explicit-function-return-type": 0,
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"@typescript-eslint/explicit-member-accessibility": 0,
+		"@typescript-eslint/no-unused-vars": "error",
+		"@typescript-eslint/interface-name-prefix": [
+			"error",
+			"always"
+		],
+		"@typescript-eslint/indent": [
+			"error",
+			"tab"
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"no-unused-vars": 0,
+		"semi": 0
+	},
+	"overrides": [
+		{
+			"files": ["packages/*/test/**/*.test.ts"],
+			"env": {
+				"jest": true
+			}
+		}
+	]
+}

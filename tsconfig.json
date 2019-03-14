@@ -4,14 +4,14 @@
 		"module": "esnext",
 		"lib": ["esnext"],
 		"moduleResolution": "node",
-		"noEmit": true,
-		"forceConsistentCasingInFileNames": true
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"declaration": true,
+		"sourceMap": false,
+
+		"strict": true
 	},
-	"files": [
-		"typings/index.d.ts",
-		"typings/methods.d.ts",
-		"typings/objects.d.ts",
-		"typings/params.d.ts",
-		"typings/responses.d.ts"
+	"exclude": [
+		"node_modules"
 	]
 }
