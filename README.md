@@ -8,7 +8,7 @@
 
 VK-IO - This is a powerful [Node.js](https://nodejs.org) module that allows you to easily interact with the VK API 🚀
 
-| 📖 [Documentation](docs/) | 🤖 [Examples](docs/examples/) |
+| 📖 [Documentation](https://github.com/negezor/vk-io/tree/master/docs) | 🤖 [Examples](https://github.com/negezor/vk-io/tree/master/docs/examples) |
 |---------------------------|---------------------------|
 
 ## Features
@@ -17,11 +17,6 @@ VK-IO - This is a powerful [Node.js](https://nodejs.org) module that allows you 
 - Works with large collections of data
 - Support for all types of authorization, including via login and password
 - Typings
-
-## Migrating to 4.0.0
-You can read the [migration guide here](Upgrade-RU.md) [RU].
-
-Old version of the library is located [here](https://github.com/negezor/vk-io/tree/v3.2.0).
 
 ## Installation
 > **[Node.js](https://nodejs.org/) 8.0.0 or newer is required**  
@@ -39,7 +34,7 @@ npm i vk-io
 
 ## Example usage
 ```js
-import { VK } from 'vk-io';
+import VK from 'vk-io';
 
 const vk = new VK({
 	token: process.env.TOKEN
@@ -56,10 +51,11 @@ async function run() {
 run().catch(console.log);
 ```
 
+
 ## Community
 ### Useful modules that may be useful to you
 
-* [@vk-io/session](packages/session): Simple implementation of the sessions
-* [@vk-io/scenes](packages/scenes): Simple implementation of middleware-based scene management
+* [@vk-io/session](../session): Simple implementation of the sessions
+* [@vk-io/scenes](../scenes): Simple implementation of middleware-based scene management
 
 > If you want to add your module in the list, create a [new issue](https://github.com/negezor/vk-io/issues/new) in the repository.

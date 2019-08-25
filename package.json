@@ -1,37 +1,81 @@
 {
-	"name": "vk-io-monorepo",
-	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
-	"engines": {
-		"node": ">=8.0.0"
-	},
-	"devDependencies": {
-		"@types/jest": "^24.0.17",
-		"@types/node": "^12.7.2",
-		"@typescript-eslint/eslint-plugin": "^2.0.0",
-		"@typescript-eslint/parser": "^2.0.0",
-		"eslint": "^6.1.0",
-		"eslint-config-airbnb-base": "^14.0.0",
-		"eslint-plugin-import": "^2.18.2",
-		"jest": "^24.8.0",
-		"rollup": "^1.19.4",
-		"rollup-plugin-commonjs": "^10.0.2",
-		"rollup-plugin-json": "^4.0.0",
-		"rollup-plugin-node-resolve": "^5.2.0",
-		"rollup-plugin-typescript2": "^0.22.1",
-		"ts-jest": "^24.0.2",
-		"typescript": "^3.5.3"
-	},
-	"scripts": {
-		"prepare": "yarn run rollup:build && yarn run test",
-		"build": "yarn run rollup:build",
-		"watch": "yarn run rollup:watch",
-		"rollup:build": "rollup -c rollup.config.ts",
-		"rollup:watch": "yarn run rollup:build -w",
-		"test": "yarn run test:jest && yarn run test:eslint",
-		"test:jest": "jest --config jest.config.json --no-cache",
-		"test:eslint": "eslint --ext .ts,.js --ignore-path .gitignore packages/*/src/**/*.{ts,js}"
-	}
+  "_from": "vk-io",
+  "_id": "vk-io@4.0.0-rc.20",
+  "_inBundle": false,
+  "_integrity": "sha512-IfhwrIvfJdUaieMWmx+qhcEYLhocQ11GDVNsQB3OWndG2fBIpsJ4wRT2wlEmGiHLEEOK5R6jnt22sZXWlrijHw==",
+  "_location": "/vk-io",
+  "_phantomChildren": {
+    "ms": "2.1.1",
+    "psl": "1.3.0",
+    "punycode": "2.1.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vk-io",
+    "name": "vk-io",
+    "escapedName": "vk-io",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vk-io/-/vk-io-4.0.0-rc.20.tgz",
+  "_shasum": "80fc88f02357aedab0c67239d31a3d763b96c55f",
+  "_spec": "vk-io",
+  "_where": "C:\\Users\\timmi\\Documents\\GitHub\\node_vkgram",
+  "author": {
+    "name": "Vladlen",
+    "email": "negezor@gmail.com",
+    "url": "Negezor"
+  },
+  "bugs": {
+    "url": "https://github.com/negezor/vk-io/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "debug": "^4.1.1",
+    "middleware-io": "^2.0.0",
+    "node-fetch": "^2.6.0",
+    "sandwich-stream": "^2.0.2",
+    "tough-cookie": "^3.0.1",
+    "ws": "^7.1.0"
+  },
+  "deprecated": false,
+  "description": "Modern VK API SDK for Node.js",
+  "devDependencies": {
+    "@types/node": "^12.6.8"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "lib",
+    "typings"
+  ],
+  "homepage": "https://github.com/negezor/vk-io#readme",
+  "keywords": [
+    "vk",
+    "api",
+    "sdk",
+    "bot",
+    "node",
+    "js",
+    "es6",
+    "es7"
+  ],
+  "license": "MIT",
+  "main": "lib/index",
+  "module": "lib/index.mjs",
+  "name": "vk-io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negezor/vk-io.git"
+  },
+  "types": "./typings/index.d.ts",
+  "version": "4.0.0-rc.20"
 }
