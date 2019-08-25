@@ -814,8 +814,8 @@ export class Upload {
 			add_to_news?: number;
 			user_ids?: string[] | string;
 			reply_to_story?: string;
-			link_text: string;
-			link_url: string;
+			link_text?: string;
+			link_url?: string;
 		}
 	): Promise<IStoryObject>;
 
@@ -828,8 +828,8 @@ export class Upload {
 			add_to_news?: number;
 			user_ids?: string[] | string;
 			reply_to_story?: string;
-			link_text: string;
-			link_url: string;
+			link_text?: string;
+			link_url?: string;
 		}
 	): Promise<IStoryObject>;
 
