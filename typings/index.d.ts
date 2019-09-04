@@ -553,7 +553,8 @@ export interface IStoryObject {
 		can_comment: number;
 		views: number;
 		access_key: string;
-	}
+	};
+	error: any;
 }
 
 export class Upload {
